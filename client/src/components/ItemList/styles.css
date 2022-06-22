@@ -1,0 +1,9 @@
+.Card-no-content {
+    flex: '1 0 auto'
+  }
+  
+.Box {
+    display: 'flex';
+    flex-direction: 'column';
+    padding: 1%
+  }

@@ -1,0 +1,27 @@
+{
+  "name": "@epsilon/take-home",
+  "version": "1.0.1",
+  "author": "Epsilon",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "engines": {
+    "node": "14"
+  },
+  "scripts": {
+    "client": "yarn workspace @epsilon/take-home-client",
+    "server": "yarn workspace @epsilon/take-home-server",
+    "up": "docker-compose up --remove-orphans",
+    "up:clean": "docker-compose up --remove-orphans --build --force-recreate",
+    "logs": "docker-compose logs --follow",
+    "down": "docker-compose down",
+    "build": "docker-compose build",
+    "start": "yarn up --detach",
+    "stop": "yarn down"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
